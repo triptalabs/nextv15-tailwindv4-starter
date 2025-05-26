@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { navLinks } from '@/config'
 
-export const Footer = () => {
+export default function Footer() {
   return (
     <footer className='z-10 flex-none'>
       <div className='sm:px-8'>

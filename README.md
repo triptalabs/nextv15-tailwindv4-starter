@@ -1,45 +1,95 @@
-<p><a href="https://www.npmjs.com/package/create-next-tw-app"><img style='border-radius: 12px;filter: drop-shadow(0px 9px 10px #888888);' src="https://repository-images.githubusercontent.com/906940804/487f770a-319b-4285-a62c-7193bfd7dd49" alt="Create next tw app" /></a></p>
+# 📚 README del Frontend - Milestone 4
 
-[![npm](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&r=r&ts=1683906897&type=6e&v=0.1.0&x2=0)](https://www.npmjs.com/package/create-next-tw-app)
-# Nextv15 Tailwindv4 Starter
+## 🎯 Objetivo del Milestone
+Establecer la **base del frontend** del proyecto utilizando **Next.js 15.3.2** y **Tailwind CSS 4.1.7**, con una estructura clara, configuraciones revisadas y estilos funcionales. Se documentó cada paso para evitar errores acumulados y preparar el terreno para próximos hitos.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and configured with Tailwind CSS v4. It's a great starting point for building an app or for anyone who wants to learn how to use Tailwind CSS v4.
+---
 
-## Getting Started
+## 📁 Estructura Final del Proyecto
 
-You can download and install the app by running the script. For example, with npm, it would be:
+📦 **frontend**  
+├── 📂 .next/ - Carpeta de build generada por Next.js  
+├── 📂 .git/ - Configuración de Git  
+├── 📂 node_modules/ - Dependencias instaladas  
+├── 📂 app/ - Páginas, layouts y rutas  
+│   ├── 📄 page.tsx - Página principal  
+│   ├── 📄 globals.css - Estilos globales con Tailwind  
+│   ├── 📄 layout.tsx - Layout general para todas las páginas  
+│   ├── 📄 favicon.ico - Ícono del sitio  
+│   ├── 📂 blog/ - Ruta para el blog  
+│   ├── 📂 tienda/ - Ruta para la tienda  
+│   ├── 📂 links/ - Ruta de links  
+│   ├── 📂 here/ - Ruta adicional  
+│   ├── 📂 go/ - Otra ruta  
+│   └── 📂 api/ - Rutas API  
+├── 📂 components/ - Componentes reutilizables  
+│   ├── 📂 layout/ - Componentes del layout  
+│   └── 📄 nav.tsx - Navegación del sitio  
+├── 📂 utils/ - Utilidades y helpers  
+│   └── 📄 fetcher.tsx - Función para hacer fetch de datos  
+├── 📂 config/ - Configuración personalizada  
+│   └── 📄 index.ts - Configuración inicial  
+├── 📂 public/ - Archivos estáticos  
+│   ├── 📄 og.jpg - Imagen para Open Graph  
+│   ├── 📄 next.svg - Logo Next.js  
+│   ├── 📄 favicon-16x16.png - Ícono 16x16  
+│   └── 📄 apple-touch-icon.png - Ícono para Apple  
+├── 📄 package.json - Configuración de dependencias  
+├── 📄 package-lock.json - Versión exacta de dependencias  
+├── 📄 postcss.config.mjs - Configuración de PostCSS para Tailwind 4  
+├── 📄 tailwind.config.ts - Configuración extendida de Tailwind  
+├── 📄 next-env.d.ts - Configuración de entorno TypeScript  
+├── 📄 tsconfig.json - Configuración general de TypeScript  
+├── 📄 eslint.config.mjs - Configuración de ESLint  
+├── 📄 next.config.ts - Configuración avanzada de Next.js  
+├── 📄 bun.lockb - Lockfile para Bun (opcional)  
+├── 📄 .gitignore - Archivos a ignorar por Git  
+└── 📄 README.md - Documentación del proyecto (este archivo)  
 
-```bash
-npx create-next-tw-app my-app
-```
+---
 
-Alternatively, you can download the project by cloning the repository or downloading the zip file, etc then install the dependencies:
+## 🎨 Tema Visual
+- Paleta extendida: `licorice`, `platinum`, `darkSlateGray`, `classy1`...  
+- Gradientes personalizados: `gradient-main`, `gradient-alt`  
+- Fuentes: **Poppins** y **Roboto**
 
-```bash
-git clone https://github.com/your-repo/nextv15_tailwindv4_starter.git
-cd nextv15_tailwindv4_starter
-npm install
-npm run dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Configuraciones Clave
+- **Tailwind.config.ts** extendido con colores, fuentes y degradados.
+- **PostCSS** configurado con `@tailwindcss/postcss` para Tailwind v4.
+- **globals.css** bien formado con directivas Tailwind y fuentes importadas.
+- **ESLint y TypeScript** correctamente configurados.
+- **Rutas `/tienda`, `/blog`**, y layout general funcional.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔍 Problemas Detectados y Resueltos
+- 🛑 PostCSS mal configurado (resuelto con Tailwind 4).  
+- 🛑 Tailwind no aplicaba (resuelto con nueva estructura y configuración).  
+- 🛑 Proyecto anterior con errores acumulados (descartado y recreado limpio).
 
-## Learn More
+---
 
-To learn more about Next.js and Tailwind CSS, take a look at the following resources:
+## ✅ Estado Final del Milestone
+- 🏗️ Proyecto limpio, funcional y bien estructurado.  
+- 🚀 Tailwind CSS 4 totalmente funcional.  
+- 📝 Documentación completa.  
+- Listo para avanzar al siguiente milestone.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - learn about Tailwind CSS features and API.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) and [the Tailwind CSS GitHub repository](https://github.com/tailwindlabs/tailwindcss) - your feedback and contributions are welcome!
+## 🔜 Próximos Pasos
+- Crear componentes adicionales (Sidebar, Button, Hero, etc).  
+- Implementar contenido real en `/tienda` y `/blog`.  
+- Añadir APIs y lógica de negocio.  
+- Mejorar UI con librerías externas si es necesario (shadcn/ui, etc).  
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📈 Diagrama Visual (opcional)
+*(Puedes incluir aquí una imagen generada con el diagrama Mermaid que preparamos, para referencia visual.)*
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+🚀 **¡Milestone 4 COMPLETADO!** Preparados para avanzar al siguiente reto.  

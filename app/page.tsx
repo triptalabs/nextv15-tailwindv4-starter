@@ -1,75 +1,74 @@
-import Image from "next/image"
-
 const Page = () => {
   return (
-    <div className="grid grid-rows-[10px_1fr_300px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">Welcome to Create Next Tw App.</li>
-          <li>
-            Get started by editing{" "}
-            <code className="bg-blue-600 px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-neutral-800 text-background gap-2 hover:bg-[#383838] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.03] dark:border-white/[.3] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-black">
+      {/* Header/Nav */}
+      <nav className="fixed w-full bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 py-4">
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <div className="text-2xl font-bold text-gray-800 dark:text-white">Logo</div>
+          <div className="flex gap-6">
+            <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">Inicio</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">Servicios</a>
+            <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">Contacto</a>
+          </div>
         </div>
-      </div>
-      <div className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Go to nextjs.org →
-        </a>
-      </div>
+      </nav>
+
+      {/* Hero Section */}
+      <main className="pt-24">
+        <div className="container mx-auto px-4 py-20">
+          <div className="flex flex-col items-center text-center gap-8">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white">
+              Bienvenido a <span className="text-blue-600">Nuestra Web</span>
+            </h1>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
+              Creamos soluciones digitales innovadoras para impulsar tu negocio hacia el futuro.
+            </p>
+            <div className="flex gap-4 mt-8">
+              <button className="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
+                Empezar
+              </button>
+              <button className="px-8 py-3 border border-gray-300 dark:border-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                Saber más
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Features Section */}
+        <div className="bg-white dark:bg-gray-900 py-20">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="p-6 rounded-xl bg-gray-50 dark:bg-gray-800">
+                <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Innovación</h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Utilizamos las últimas tecnologías para crear soluciones modernas.
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-gray-50 dark:bg-gray-800">
+                <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Calidad</h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Garantizamos la mejor calidad en todos nuestros servicios.
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-gray-50 dark:bg-gray-800">
+                <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">Soporte</h3>
+                <p className="text-gray-600 dark:text-gray-300">
+                  Ofrecemos soporte continuo para todos nuestros clientes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 dark:bg-gray-900 py-8">
+        <div className="container mx-auto px-4 text-center text-gray-600 dark:text-gray-300">
+          <p>© 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
+      </footer>
     </div>
   );
 };
 
-export default Page
+export default Page;
